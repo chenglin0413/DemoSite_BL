@@ -25,7 +25,7 @@
         <th:block th:if="${cart.itemCount == 0}">
             <li class="mini-cart-empty">
                 <div>
-                    Your cart is empty
+                     <span th:utext="#{cart.message}">Your cart is empty</span>:
                 </div>
             </li>
         </th:block>
