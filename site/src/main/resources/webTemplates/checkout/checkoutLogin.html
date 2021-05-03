@@ -16,14 +16,14 @@
             </div>
             <div class="col-sm-5 col-centered checkout-guest-wrapper">
                 <div class="text-center">
-                    <h3 class="card-title">Guests</h3>
+                    <h3 class="card-title" th:utext="#{login.guestsTitle}">Guests</h3>
                 </div>
-                <p class="checkout-guest-text">
+                <p class="checkout-guest-text" th:utext="#{login.welcomeForGuest}">
                     Would you like to continue the checkout process as a guest?  That's fine by us!  Next time try registering an account to make the checkout process quicker.
                 </p>
                 <blc:form th:action="@{'/checkout'}" method="Get" class="text-right">
                     <input type="hidden" name="guest-checkout" value="true" />
-                    <button type="submit" class="btn btn-primary">Checkout as Guest</button>
+                    <button type="submit" class="btn btn-primary" th:utext="#{login.checkoutButton}">Checkout as Guest</button>
                 </blc:form>
             </div>
 
