@@ -2,7 +2,7 @@
     <th:block th:with="appliedOffers=${#promotion_messages.getItemPromotionMessages(item)}">
         <ul class="promotion">
             <li th:each="offer : ${appliedOffers}">
-                <span class="promotion-applied">Promotion Applied: </span>
+                <span class="promotion-applied" th:utext="#{cart.promotionApplied}">Promotion Applied: </span>
                 <span th:utext="${offer}"></span>
             </li>
         </ul>
